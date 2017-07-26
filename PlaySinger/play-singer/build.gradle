@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId 'name.peterbukhal.android.playsinger'
+        minSdkVersion 11
+        targetSdkVersion 24
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../keystore/debug.jks')
+            storePassword 'androiddebugkeystore'
+            keyAlias 'androiddebugkey'
+            keyPassword 'androiddebugkey'
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+
+    compile 'com.opencsv:opencsv:3.6'
+    compile 'com.h2database:h2:1.4.190'
+    compile 'com.mikepenz:materialdrawer:5.2.6'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+    compile 'com.j256.ormlite:ormlite-jdbc:4.48'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PlaySinger</string>
+    <string name="title_activity_main">PlaySinger</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="exit">Exit</string>
+    <string name="refresh">Refresh</string>
+    <string name="text_loading">Loading</string>
+    <string name="playback_stopped">Stopped</string>
+    <string name="text_station_inaccessible">Station inaccessible</string>
+    <string name="str1">%1$s - %2$s</string>
+    <string name="name">name</string>
+    <string name="contentDescription">-</string>
+    <string name="resume">Resume</string>
+    <string name="playback_paused">Paused</string>
+</resources>

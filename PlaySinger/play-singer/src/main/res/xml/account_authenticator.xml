@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="name.peterbukhal.android.playsinger"
+    android:icon="@drawable/ic_radio"
+    android:smallIcon="@drawable/ic_radio"
+    android:label="@string/app_name"/>
